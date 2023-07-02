@@ -1,5 +1,26 @@
 @charset "utf-8";
 
+:root {
+  /* --brand-color: orange; */
+  --brand-color: skyblue;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  max-width: 600px;
+  margin: 0 auto;
+  width: calc(100% - 16px - 16px);
+}
+
+h1 {
+  margin: 0;
+  color: var(--brand-color);
+  border-bottom: 2px solid var(--brand-color);
+}
+
 p {
-  background-color: pink;
+  margin: 0;
 }
