@@ -1,0 +1,13 @@
+/* 右側の仕様を確認してここから実装してください */
+
+h1 {
+    font-size: 44px;
+    background-color: whitesmoke;
+    border-left: 8px solid orange;
+    line-height: 1.4;
+    padding: 8px 8px 0 16px;
+  }
+  
+  p {
+    font-size: 11px;
+  }
