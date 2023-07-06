@@ -1,2 +1,45 @@
 /* 右側の仕様を確認してここから実装してください */
 /* この課題ではフレックスボックスを使ってはいけません */
+
+.box1 {
+    /* width: 84px; */
+    width: calc(100px - 8px*2);
+    height:calc(100px - 8px*2);
+    background: red;
+    color: white;
+    border: 8px solid green;
+}
+.box2 {
+    width: 100px;
+    height:calc(100px - 8px);
+    background: pink;
+    color: white;
+    border-bottom: 8px solid purple;
+    margin-top: 16px;
+    
+}
+.box3 {
+    width: 100px;
+    height:100px;
+    background: skyblue;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: center;
+    line-height: 100px;
+    margin-top: 16px;
+}
+
+.box4 {
+    width: 200px;
+    height: 100px;
+    background: rgb(0, 90, 255);
+    color: white;
+    margin-top: 16px;
+    font-size: bold;
+    text-align: center;
+    vertical-align: center;
+    line-height: 100px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px  #333;
+}

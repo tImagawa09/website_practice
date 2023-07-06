@@ -1,2 +1,29 @@
 /* 右側の仕様を確認してここから実装してください */
 /* この課題ではフレックスボックスを使ってはいけません */
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    color: white;
+    text-align: left;
+    margin-right: auto;
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background: pink;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background: skyblue;
+    color: white;
+    text-align: right;
+    margin-left: auto;
+}
