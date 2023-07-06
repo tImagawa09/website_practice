@@ -1,5 +1,73 @@
 @charset "utf-8";
 
 body {
-  background-color: pink;
+  margin: 0;
+}
+
+header {
+  background-color: #eee;
+  text-align: center;
+  padding: 32px;
+  
+}
+
+header img {
+  border-radius: 50%;
+}
+
+h1 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 24px;
+  margin-top: 16px;
+}
+
+p {
+  margin: 0;
+}
+
+main {
+  padding: 64px 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: normal;
+  text-align: center;
+}
+
+h3 {
+  margin: 16px 0 0;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+section {
+  width: 400px;
+  margin: 64px auto;
+}
+
+section p {
+  margin-top: 16px;
+  line-height: 1.8;
+}
+
+footer {
+  border-top: #ccc;
+  text-align: center;
+  padding: 64px 0;
+}
+
+small {
+  font-size: 14px;
+  color: #aaa;
+}
+
+a.hover {
+  opacity: .7;
+}
+
+address {
+  margin-top: 16px;
 }
