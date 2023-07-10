@@ -1,3 +1,38 @@
 /* 右の仕様を満たすように CSS を書いて実装してみましょう */
 /* この課題ではフレックスボックスを使ってはいけません */
 
+h1 {
+    font-size: 24px;
+    line-height: 1.4;
+    /* margin: 4px; */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.ttl-1 {
+    background: #EEE;
+    padding: 8px 16px;
+    border-left: 8px solid rgb(0, 110, 255);
+}
+
+.ttl-2 {
+    background: #EEE;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.ttl-3 {
+    padding: 8px 4px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+
+.ttl-4 {
+    padding: 8px 4px;
+    border-top: double black;
+    border-bottom:  double black;
+}
