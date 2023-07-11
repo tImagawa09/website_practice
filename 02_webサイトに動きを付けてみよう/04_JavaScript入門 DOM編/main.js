@@ -2,6 +2,8 @@
 
 {
     document.querySelector('button').addEventListener('click', () => {
-        console.log('clicked');
+        document.querySelectorAll('li').forEach((li) => {
+            li.textContent = 'changed'
+        });
     });
 }
