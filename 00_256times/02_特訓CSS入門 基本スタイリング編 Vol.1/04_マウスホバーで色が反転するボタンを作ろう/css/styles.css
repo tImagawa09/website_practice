@@ -1,2 +1,22 @@
 /* 右の仕様を満たすように CSS を書いて実装してみましょう */
 /* この課題ではフレックスボックスを使ってはいけません */
+
+a {
+    display: inline-block;
+    width: auto;
+    background: white;
+    color: black;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 8px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+a:hover {
+    background: black;
+    color: white;
+}
