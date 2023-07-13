@@ -1,1 +1,98 @@
-/* 自由に編集してみてください */
+h1 {
+    line-height: 1.4;
+    font-size: 20px;
+    }
+
+p {
+    line-height: 1.6;
+    font-size: 15px;
+  }
+
+.card {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* .card-1 */
+.card-1 {
+        padding: 0 16px;
+        margin: 16px 0;
+        box-sizing: border-box;
+        width: 400px;
+        border: 1px solid #aaa;
+        border-radius: 8px;
+        background: pink;
+        }
+
+.card-1 h1 {
+            padding: 8px 0 ;
+            border-bottom: 1px solid #aaa;
+            background: #001c99;
+            color: white;
+            }
+
+.card-1 p {
+    background: yellow;
+}
+
+.card-1 a {
+            display: inline-block;
+            width: 120px;
+            border: 1px solid black;
+            border-radius: 8px;
+            text-align: center;
+            margin: 8px 0 16px 8px;
+            padding: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+            background: skyblue;
+            }
+
+.card-1 a:hover {
+                color: white;
+                background: black;
+                }
+
+
+/* .card-2 */
+.card-2 {
+        padding: 0 16px;
+        margin: 16px 0;
+        box-sizing: border-box;
+        width: 400px;
+        border: 1px solid #aaa;
+        border-radius: 8px;
+        }
+
+.card-2 h1 {
+            padding: 8px 0 ;
+            border-bottom: 4px double #aaa;
+            text-align: center;
+            }
+
+.card-2 p {
+            text-align: center;
+            }
+
+.card-2 a {
+            display: inline-block;
+            width: 120px;
+            border: 1px solid black;
+            border-radius: 8px;
+            text-align: center;
+            margin: 8px 0 16px 8px;
+            padding: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+            background: rgb(135, 150, 235);
+            }
+
+.card-2 a:hover {
+                color: black;
+                opacity: .7;
+                }
+
