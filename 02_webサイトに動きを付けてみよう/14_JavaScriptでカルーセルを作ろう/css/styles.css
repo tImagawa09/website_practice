@@ -43,9 +43,9 @@ li img {
     cursor: pointer;
 }
 
-#prev,
-#next {
-    opacity: 0.4;
+#prev:hover,
+#next:hover {
+    opacity: 0.8;
 }
 
 #prev {
@@ -59,4 +59,27 @@ li img {
 
 .hidden {
     display: none;
+}
+
+nav {
+    margin-top: 16px;
+    text-align: center;
+}
+
+nav button {
+    border: none;
+    width: 16px;
+    height: 16px;
+    background: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+nav button + button {
+    margin-left: 8px;
+}
+
+nav .current {
+    background: #999;
+
 }
