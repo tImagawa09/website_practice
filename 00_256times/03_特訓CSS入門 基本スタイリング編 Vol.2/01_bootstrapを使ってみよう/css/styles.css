@@ -1,0 +1,15 @@
+/* 右の仕様を満たすように CSS を書いて実装してみましょう */
+/* この課題ではフレックスボックスを使ってはいけません */
+
+i {
+    font-size: 32px;
+    margin: 8px;
+}
+
+#heart {
+    color: red;
+}
+
+#smile {
+    color: #ffd700;
+}

@@ -1,0 +1,33 @@
+/* 右の仕様を満たすように CSS を書いて実装してみましょう */
+/* この課題ではフレックスボックスを使ってはいけません */
+
+section {
+    display: inline-block;
+    font-size: 16px;
+    margin: 16px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 8px 32px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+.twitter-button:hover {
+    color: white;
+    background-color: #1da1f2;
+}
+
+.facebook-button:hover {
+    color: white;
+    background-color: #3B5998;
+}
+
+.instagram-button:hover {
+    color: white;
+    background-color: #C6048A;
+}
