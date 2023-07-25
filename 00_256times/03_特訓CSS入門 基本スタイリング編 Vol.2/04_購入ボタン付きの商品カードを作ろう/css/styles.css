@@ -1,0 +1,46 @@
+.ruler {
+  height: 8px;
+  width: 400px;
+  background: gray;
+  margin: 16px 0;
+}
+
+/* これより上のCSSを削除、変更してはいけません */
+/* 右の仕様を満たすように CSS を書いて実装してみましょう */
+
+section {
+    width: 400px;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid #777;
+    border-radius: 8px;
+    padding: 0 16px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 8px;
+}
+
+h1 {
+    font-size: 18px;
+    border-bottom: 1px solid #777;
+}
+
+button {
+    display: block;
+    margin: 8px 8px 8px auto;
+    margin-left: auto;
+    padding: 8px 16px;
+    cursor: pointer;
+    color: white;
+    background-color: #F47A4D;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    opacity: .7;
+
+}
