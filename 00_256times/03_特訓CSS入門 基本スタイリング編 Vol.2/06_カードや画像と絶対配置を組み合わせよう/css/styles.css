@@ -1,0 +1,36 @@
+/* 右の仕様を満たすように CSS を書いて実装してみましょう */
+
+section {
+    box-sizing: border-box;
+    width: 400px;
+    border: 1px solid black;
+    padding: 0 16px;
+    position: relative;
+}
+
+section span {
+    position: absolute;
+    background-color: red;
+    color: white;
+    padding: 4px 16px;
+    right: -10px;
+    top: -10px;
+}
+
+div {
+    margin-top: 16px;
+    position: relative;
+
+
+}
+
+div span {
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    background-color: #444;
+    opacity: .7;
+    color: white;
+    font-weight: bold;
+    padding: 8px 48px;
+}

@@ -1,0 +1,68 @@
+/* 右の仕様を満たすように CSS を書いて実装してみましょう */
+/* この課題ではフレックスボックスを使ってはいけません */
+
+.box-1  {
+    background: #d3d3d3;
+    width: 80px;
+    height: 80px;
+    margin-top: 16px;
+    position: relative;
+}
+
+.box-1 div {
+    background: red;
+    position: absolute;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+}
+
+.box-2  {
+    background: #d3d3d3;
+    width: 80px;
+    height: 80px;
+    margin-top: 16px;
+    position: relative;
+}
+
+.box-2 div {
+    background: green;
+    position: absolute;
+    right: -40px;
+    bottom: -0px;
+    width: 40px;
+    height: 40px;
+}
+
+.box-3  {
+    background: #d3d3d3;
+    width: 80px;
+    height: 80px;
+    margin-top: 16px;
+    position: relative;
+}
+
+.box-3 div {
+    background: blue;
+    position: absolute;
+    right: -5px;
+    bottom: 45px;
+    width: 40px;
+    height: 40px;
+}
+
+.box-4  {
+    background: #d3d3d3;
+    width: 80px;
+    height: 80px;
+    margin-top: 16px;
+    position: relative;
+}
+
+.box-4 div {
+    background: yellow;
+    position: absolute;
+    bottom: 0%;
+    width: 80px;
+    height: 40px;
+}
