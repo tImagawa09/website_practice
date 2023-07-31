@@ -1,0 +1,32 @@
+.ruler {
+    width: 600px;
+    height: 8px;
+    background: red;
+    margin: 0 auto;
+  }
+  
+  /* これより上の CSS は変更してはいけません */
+  /* 右の仕様を満たすように CSS を書いて実装してみましょう */
+  /* この課題ではフレックスボックスを使ってはいけません */
+  
+body {
+    margin: 0;
+}
+
+.container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: skyblue;
+    max-width: 600px;
+    width: calc(100% - 16px - 16px);
+}
+
+h1 {
+    font-size: 18px;
+    border-bottom: 1px solid black;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}

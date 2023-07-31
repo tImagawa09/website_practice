@@ -1,0 +1,27 @@
+.ruler {
+    width: 600px;
+    height: 8px;
+    background: red;
+    margin: 16px auto;
+  }
+  
+  /* これより上の CSS は変更してはいけません */
+  /* 右の仕様を満たすように CSS を書いて実装してみましょう */
+  /* この課題ではフレックスボックスを使ってはいけません */
+  
+body {
+    margin: 0;
+}
+
+.container {
+    width: calc(100% - 16px - 16px);
+    max-width: 600px;
+    box-sizing: border-box;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+section:nth-child(even) {
+    background-color: lightgray;
+
+}
