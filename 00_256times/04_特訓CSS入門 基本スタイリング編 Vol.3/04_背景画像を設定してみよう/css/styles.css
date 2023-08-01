@@ -1,0 +1,37 @@
+.ruler {
+    width: 600px;
+    height: 8px;
+    background: red;
+    margin: 16px auto;
+  }
+  
+  /* これより上の CSS は変更してはいけません */
+  /* 右の仕様を満たすように CSS を書いて実装してみましょう */
+  /* この課題ではフレックスボックスを使ってはいけません */
+  /* 背景画像には https://user-images.githubusercontent.com/50351871/178187962-edb8ba06-552c-4d52-b335-8d5866a2072b.png を使ってください */
+  
+body {
+    margin: 0;
+}
+
+header {
+    height: 160px;
+    text-align: center;
+    line-height: 160px;
+    background-image: url(https://user-images.githubusercontent.com/50351871/178187962-edb8ba06-552c-4d52-b335-8d5866a2072b.png);
+    background-position: bottom;
+    background-size:cover;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    width: calc(100% - 16px - 16px);
+    box-sizing: border-box;
+    margin: 0 auto;
+}
