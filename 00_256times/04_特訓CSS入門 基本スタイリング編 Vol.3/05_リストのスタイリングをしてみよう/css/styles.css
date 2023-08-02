@@ -1,0 +1,36 @@
+.ruler {
+    width: 600px;
+    height: 8px;
+    background: red;
+    margin: 16px auto;
+  }
+  
+  /* これより上の CSS は変更してはいけません */
+  /* 右の仕様を満たすように CSS を書いて実装してみましょう */
+  /* この課題ではフレックスボックスを使ってはいけません */
+
+.container {
+    margin: 0 auto;
+    width: calc(100% - 16px - 16px);
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    margin: 0 auto;
+    background: #eee;
+    border-radius: 4px;
+    list-style: none;
+    padding: 16px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+li:hover {
+    background: #ddd;
+
+}

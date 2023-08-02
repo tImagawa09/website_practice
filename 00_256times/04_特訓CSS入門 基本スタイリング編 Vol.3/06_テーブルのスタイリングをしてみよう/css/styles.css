@@ -1,0 +1,33 @@
+.ruler {
+    width: 600px;
+    height: 8px;
+    background: red;
+    margin: 16px auto;
+  }
+  
+  /* これより上の CSS は変更してはいけません */
+  /* 右の仕様を満たすように CSS を書いて実装してみましょう */
+  /* この課題ではフレックスボックスを使ってはいけません */
+  
+
+table {
+    border-collapse: collapse;
+    max-width: 600px;
+    width: calc(100% - 16px - 16px);
+    margin: 0 auto;    
+}
+
+th {
+    border:  1px solid black;
+    background-color: #eee;
+    padding: 8px;
+}
+
+td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+ #score {
+    text-align: right;
+}
