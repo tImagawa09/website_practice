@@ -1,4 +1,64 @@
 /* 自由に編集してみてください */
 /* 使える人はフレックスボックスを使ってもかまいません */
 
+body {
+    margin: 0;
+}
 
+header {
+    padding: 16px;
+    text-align: center;
+    background-color: #C2EEFF;
+}
+
+.headline {
+    margin: 0 auto;
+    text-align: center;
+    width: calc(100% - 16px - 16px);
+    box-sizing: border-box;
+}
+
+.headline img {
+    margin: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.headline img:hover {
+    opacity: .6;
+}
+
+.container {
+    margin: 32px auto;
+    display: flex;
+    max-height: 400px;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: calc(100% - 16px - 16px);
+    max-width: 1300px;
+}
+
+.container:nth-child(even) {
+    justify-content: flex-end;
+}
+
+.explain {
+    display: flexbox;
+    width: calc(100% - 16px - 16px);
+    padding: 0 8px;
+    border-radius: 4px;
+}
+
+img {
+    border-radius: 16px;
+    padding: 8px;
+}
+
+h2 {
+    text-align: center;
+    background-color: lightgray;
+}
+
+p {
+    text-align: center;
+}
