@@ -1,0 +1,40 @@
+/* 右の仕様を満たすようにCSSアニメーションを使って実装してみましょう */
+.box-1 {
+    border: none;
+    width: 100px;
+    height: 100px;
+    background: #8EC6E4;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.box-1:hover {
+    border-radius: 50%;
+}
+
+.box-2 {
+    /* border: 1px solid #EA5E44; */
+    border: none;
+    width: 100px;
+    height: 100px;
+    background: #EA5E44;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.box-2:hover {
+    background: #BABABC;
+}
+
+.box-3 {
+    width: 100px;
+    height: 100px;
+    background: #F2A22C;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.box-3:hover {
+    border-radius: 50%;
+    background: #BABABC;
+}
