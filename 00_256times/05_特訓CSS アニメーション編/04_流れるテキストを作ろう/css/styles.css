@@ -1,0 +1,25 @@
+.container {
+    background-color: #eee;
+    padding: 16px;
+    width: 300px;
+    overflow: hidden;
+}
+
+p {
+    animation-name: move-string;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition-timing-function: linear;
+}
+
+@keyframes move-string {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-110%);
+    }
+    
+}
+

@@ -1,0 +1,55 @@
+/* 右の仕様を満たすようにCSSアニメーションを使って実装してみましょう */
+.bi {
+    font-size: 64px;
+}
+
+.bi-heart-fill {
+    padding: 16px 0;
+    display: inline-block;
+    color: red;
+    animation-name: beating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+.bi-balloon-fill {
+    padding: 16px 0;
+    display: inline-block;
+    color: green;
+    animation-name: balloon;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.bi-emoji-smile {
+    padding: 16px 0;
+    display: inline-block;
+    color: orange;
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-origin: center center;
+}
+
+
+@keyframes beating {
+    25% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes balloon {
+    25% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
