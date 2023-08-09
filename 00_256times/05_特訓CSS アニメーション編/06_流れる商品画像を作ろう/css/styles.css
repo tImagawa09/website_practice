@@ -1,0 +1,25 @@
+body {
+    background-color: #eee;
+}
+
+.container {
+    width: 600px;
+    overflow: hidden;
+}
+
+.sush {
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: sushi;
+    animation-timing-function: linear;
+    display: flex;
+}
+
+@keyframes sushi {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: translateX(-600px);
+    }
+}
