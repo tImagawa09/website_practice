@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+}
+
+header {
+    margin: 0 auto;
+    width: clac(100% - 16px - 16px);
+    max-width: 600px;
+    height: 100px;
+    font-size: 40px;
+    line-height: 100px;
+    background-color: pink;
+    text-align: center;
+}
+
+
+.prin {
+    padding-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    padding: 48px;
+    display: flex;
+}
+
+#no1 {
+    animation-name: no1;
+    animation-duration: 0.2s;
+    animation-iteration-count: 2;
+}
+
+#no2 {
+    animation-name: no2;
+    animation-duration: 0.2s;
+
+}
+
+#no3 {
+    animation-name: no3;
+    animation-duration: 5s;
+}
+
+@keyframes no1 {
+    from{
+        transform: translateX(-5px);
+      }
+      
+      50%{
+        transform: translateX(10px);
+      }
+      
+      to{
+        transform: translateX(-5px);
+      }
+    /* 100% {
+        opacity: 0;
+    } */
+}
+
+@keyframes no2 {
+    from{
+        transform: translateX(-5px);
+      }
+      
+      50%{
+        transform: translateX(10px);
+      }
+
+      100% {
+        opacity: 0;
+    }
+      
+      to{
+        transform: translateX(-5px);
+      }
+
+}
+
+@keyframes no3 {
+    100% {
+        opacity: 0;
+    }
+}
+
+.window {
+    margin: 0 auto;
+    width: calc(100% - 16px - 16px);
+    max-width: 600px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    height: 150px;
+    line-height: 150px;
+    background-color: pink;
+}
