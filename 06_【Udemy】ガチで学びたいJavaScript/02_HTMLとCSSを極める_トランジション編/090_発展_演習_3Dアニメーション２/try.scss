@@ -17,6 +17,43 @@ $cBlack: black;
 
     &.cubic {
       /** スタイルをここに追加。*/
+      & span {
+        position: absolute;
+        box-sizing: border-box;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        border: 1px solid $cBlack;
+        line-height: 50px;
+        text-align: center;
+        transition: all .3s;
+        }
+
+        & .hovering {
+          background-color: $cBlack;
+          color: $cWhite;
+          transform: rotateX(90deg);
+          transform-origin: center center -25px;
+        }
+
+        & .default {
+          background-color: $cWhite;
+          color: $cBlack;
+          transform: rotateX(0);
+          transform-origin: center center -25px;
+        }
+
+        &:hover {
+          & .hovering{
+            transform: rotateX(0);
+          }
+
+          & .default {
+            transform: rotateX(-90deg);
+
+          }
+        }
     }
   }
 }
