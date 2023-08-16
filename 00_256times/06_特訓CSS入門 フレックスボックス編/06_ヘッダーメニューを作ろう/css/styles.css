@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.icon-256 {
+    padding: 16px;
+}
+
+
+.sns-icons {
+    font-size: 32px;
+    letter-spacing: 8px;
+    padding: 16px;
+}
+
+.bi {
+    color: gray;
+}
+
+.bi-twitter:hover {
+    color: #1da1f2;
+}
+
+.bi-instagram:hover {
+    color: #5851db;
+}
+
