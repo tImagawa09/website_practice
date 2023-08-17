@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+}
+
+/* header */
+header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.icon-256 {
+    padding: 16px;
+}
+
+.sns-icons {
+    font-size: 32px;
+    letter-spacing: 8px;
+    padding: 16px;
+}
+
+.bi {
+    color: gray;
+}
+
+.bi-twitter:hover {
+    color: #1da1f2;
+}
+
+.bi-instagram:hover {
+    color: #5851db;
+}
+
+/* thumbnail */
+.thumbnail {
+    display: flex;
+    margin-top: 16px;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* only pege */
+.only {
+    width: 100%;
+    padding: 8px 0;
+}
+
+#banana-only {
+    display: flex;
+    padding-bottom: 32px;
+}
+
+#str-only {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 32px;
+}
+
+#mix-only {
+    display: flex;
+    padding-bottom: 32px;
+}
+
+.box-banana {
+    border: 1px solid #eee;
+    width: calc(100% - 400px);
+    box-sizing: border-box;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-str {
+    border: 1px solid #eee;
+    width: calc(100% - 400px);
+    box-sizing: border-box;
+    background-color: #eee;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-mix {
+    border: 1px solid #eee;
+    width: calc(100% - 400px);
+    box-sizing: border-box;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#banana-button {
+    font-size: 16px;
+    margin: 0 16px;
+    width:200px;
+    height: 40%;
+    line-height: 40px;
+    padding: 4px 16px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    border-radius: 8px;
+}
+
+#banana-button:hover {
+    background-color:#FBEBB0;
+    color: black;
+    font-weight: bold;
+}
+
+#str-button {
+    font-size: 16px;
+    margin: 0 16px;
+    width:200px;
+    height: 40%;
+    line-height: 40px;
+    padding: 4px 16px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    border-radius: 8px;
+}
+
+#str-button:hover {
+    background-color: #FFAFC6;
+    color: black;
+    font-weight: bold;
+}
+
+
+#mix-button {
+    font-size: 16px;
+    margin: 0 16px;
+    width:200px;
+    height: 40%;
+    line-height: 40px;
+    padding: 4px 16px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    border-radius: 8px;
+}
+
+#mix-button:hover {
+    background-color: #6BBEE7;
+    color: black;
+    font-weight: bold;
+}
+
+
