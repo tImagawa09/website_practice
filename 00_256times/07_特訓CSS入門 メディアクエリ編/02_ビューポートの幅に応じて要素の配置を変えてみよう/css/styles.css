@@ -1,0 +1,44 @@
+/* 右の仕様を満たすようにメディアクエリーを使って実装してみましょう */
+/* この課題ではモバイルファーストで組み上げください */
+body {
+    margin: 0;
+}
+
+.box-1 {
+    height: 100px;
+    background-color: skyblue;
+}
+
+.box-2 {
+    height: 100px;
+    background-color: pink;
+}
+
+@media (min-width: 600px) {
+    .container {
+        display: flex;
+    }
+
+    .box-1 {
+        flex: 1;
+    }
+
+    .box-2 {
+        flex: 1;
+    }
+}
+
+@media (min-width: 800px) {
+    .container {
+        display: flex;
+    }
+
+    .box-1 {
+        flex: 0.8;
+    }
+
+    .box-2 {
+        flex: 0.2;
+    }
+}
+
