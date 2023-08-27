@@ -1,0 +1,9 @@
+@use "child";
+
+h1 {
+    color: child.$cBlue;
+}
+
+h2 {
+    color: child.$cRed;
+}
