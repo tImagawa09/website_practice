@@ -53,6 +53,10 @@ li::after {
     transform: rotate(-45deg);
 }
 
+/* 下の技術リスト */
+/* https://saruwakakun.com/html-css/reference/ul-ol-li-design*/
+/* タグ風が良いかも？ */
+
 
 
 /* ボタン作成このサイト */
@@ -92,3 +96,5 @@ li::after {
   .background_btn02:hover .background_btn02-line line {
     stroke: #000; /* 矢印の色 */
   }
+
+
