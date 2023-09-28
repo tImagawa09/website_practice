@@ -14,6 +14,7 @@ body {
 
 ul {
     list-style: none;
+    background-color: pink;
 }
 
 li {
@@ -96,5 +97,7 @@ li::after {
   .background_btn02:hover .background_btn02-line line {
     stroke: #000; /* 矢印の色 */
   }
+
+
 
 
