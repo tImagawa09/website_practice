@@ -39,19 +39,39 @@ header .sp .bi {
     width: 100%;
 }
 
-.hero .box p {
+.hero .box .background {
     position: absolute;
+    width: 40%;
+    height: 30%;
     top: 50%;
     left: 30%;
     color: white;
     transform: translate(-50%,-30%);
     padding:0;
     margin:0;
-    font-size:30px;
-    color: red;
-    background-color: lightgray;
-    opacity: .5;
+    background-color: #4C5656;
+    opacity: .8;
 }
+
+.hero .box .background .title {
+    font-weight: bold;
+    font-size: 120%;
+    text-align: center;
+}
+
+.hero .box .background p .beauty {
+    font-family: 'Kaisei HarunoUmi', serif;
+}
+
+.hero .box .background p .power {
+    font-family: 'Zen Antique', serif;
+}
+
+.hero .box .background .text {
+    font-size: 80%;
+    text-align: center;
+}
+
 
 
 /* フッター部分 */
