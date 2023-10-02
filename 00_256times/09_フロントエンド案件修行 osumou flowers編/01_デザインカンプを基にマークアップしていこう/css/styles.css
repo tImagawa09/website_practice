@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100vh;
+    }
+
+.pc {
+    display: none;
+}
+
+/* ヘッダー部分作成 */
+header {
+    background-color: #3b4b5a;
+    color: #fff;
+}
+
+header .sp {
+    display: flex;
+    align-items: center;
+}
+
+header .sp img {
+    padding: 12px 32px;
+}
+
+header .sp .bi {
+    margin-left: auto;
+    font-size: 46px;
+}
+
+/* ヒーロー部分作成 */
+.hero .box {
+    position: relative;
+}
+
+.hero .box img {
+    width: 100%;
+}
+
+.hero .box p {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: white;
+    transform: translate(-50%,-30%);
+    padding:0;
+    margin:0;
+    font-size:30px;
+    color: red;
+    background-color: lightgray;
+    opacity: .5;
+}
+
+
+/* フッター部分 */
+footer {
+    background-color: #F4F3DF;
+    margin: 0;
+    text-align: center;
+}
+
+footer .box img {
+    padding: 8%;
+    width: 50%;
+}
+
+footer ul {
+    list-style: none;
+    width: 50%;
+    margin:  16px auto;   
+}
+
+footer ul li {
+    text-align: left;
+}
+
+footer .icon {
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+
+footer .icon i {
+    font-size: 32px;
+    flex: 1;
+}
+
+.bi-instagram {
+    color: #E9A758;
+}
+
+.bi-twitter {
+    color: #1D9BF0;
+}
+
+.bi-facebook {
+    color: #1877F2;
+}
