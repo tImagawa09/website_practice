@@ -5,6 +5,8 @@ body {
 .container {
     width: 400px;
     padding: 16px 32px;
+    background-color: #ffffdd;
+    margin: 16px;
 }
 
 .top_title {
@@ -14,7 +16,6 @@ body {
 
 ul {
     list-style: none;
-    background-color: pink;
 }
 
 li {
@@ -23,7 +24,7 @@ li {
     box-sizing: border-box;
 }
 
-li::before {
+li.list_worry::before {
     /* 
     ここで四角部分作成
     https://ws-pilgrimage.jp/webcreate/2113/
@@ -38,7 +39,7 @@ li::before {
     border: 2px solid #ccc;
 }
 
-li::after {
+li.list_worry::after {
     /* 
     ここでチェック部分作成
     https://ws-pilgrimage.jp/webcreate/2113/
@@ -58,6 +59,31 @@ li::after {
 /* https://saruwakakun.com/html-css/reference/ul-ol-li-design*/
 /* タグ風が良いかも？ */
 
+ul.tech li {
+    font-weight: bold;
+    left: -11px;
+    position: relative;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin-bottom: 5px;
+    line-height: 1.5;
+    background: #dbebf8;
+    vertical-align: middle;
+    color: #505050;
+    border-radius: 15px 0px 0px 15px;/*左側の角丸く*/
+  }
+  
+  ul.tech li:before{ 
+    display:inline-block; 
+    vertical-align: middle;
+    /*以下白丸つくる*/
+    content:'';
+    width:1em;
+    height: 1em;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
 
 
 /* ボタン作成このサイト */
@@ -67,11 +93,11 @@ li::after {
     display: inline-block;
     color: #fff; /* 文字色 */
     font-weight: bold; /* 文字の太さ */
-    width: 100%;
-    max-width: 350px; /* ボタン幅 */
+    width: 90%;
+    max-width: 400px; /* ボタン幅 */
     text-decoration: none;
     border: 2px solid #F38173; /* 線の色 */
-    padding: 1em 2em;
+    padding: 1em 1em;
     text-align: center;
     position: relative;
     background-repeat: no-repeat;
