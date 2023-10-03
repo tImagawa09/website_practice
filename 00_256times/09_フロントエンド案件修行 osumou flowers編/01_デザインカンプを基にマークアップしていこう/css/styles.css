@@ -4,6 +4,8 @@ body {
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 100%;
     min-height: 100vh;
+    /* ウィンドウ幅固定 */
+    width: 400px;
     }
 
 .pc {
