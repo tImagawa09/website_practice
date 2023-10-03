@@ -4,26 +4,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Playground</title>
+
   <!-- CSSを読み込むため、以下のタグは削除しないでください -->
-  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet"></head>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
-  <body>
+  <link rel="stylesheet" href="css/styles.css">
+  
+</head>
+
+<body>
   <!-- このHTMLファイルは自由に編集していただいて構いません -->
 
   <header>
+
     <div class="sp">
-        <img src="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/749274/4308/60be5db0515c994465798143c77b41bf3ca85501.png" width="200" alt="">
+      <h1 class="background_header">
         <i class="bi bi-list"></i>
+      </h1>
     </div>
+
   </header>
   
-  <section class="hero">
-    <div class="box">
-      <img src="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/101/4311/af880fc03d0175ac6ec908ba4f05cab9769dbdcc.jpg" width="400">
+  <section class="hero_area">
 
-      <div class="background">
+    <div class="text_box">
         <p class="title">
 
           『<span class="beauty">美</span>』と『<span class="power">力</span>』で<br>
@@ -31,15 +36,54 @@
          
         </p>
         <p class="text"> 
-          <span class="beauty">Beauty</span>× <span class="power">Power</span>
+          <span class="beauty">Beauty</span>×<span class="power">Power</span>
         </p>
-      </div>
     </div>
 
   </section>
   
-  <section>
-    <!-- コンセプト紹介 後日実装 -->
+  <section class="concept">
+
+    <section class="story">
+      <div class="text_box">
+        <p class="title">
+
+          それぞれの物語
+         
+        </p>
+        <p class="text"> 
+          私たちは、それぞれの花が持つ独自の物語を大切にしています。さまざまな生育環境、由来、花言葉を通じて、花々が持つ深い意味を共有し、一輪一輪が語る物語を通じてお客様と深いつながりを生み出します。
+        </p>
+    </div>
+
+    </section>
+
+    <div class="cerapy">
+      <div class="text_box">
+        <p class="title">
+
+          癒しの空間
+         
+        </p>
+        <p class="text"> 
+          osumou flowersは、ただ商品を提供するだけでなく、訪れる人々に安らぎと癒しの時間を提供します。店内は心地よい香りと自然の美しさに溢れ、地域の人々にとって日常から離れて心身をリフレッシュできる特別な場所となっています。
+        </p>
+    </div>
+    </div>
+
+    <div class="sdgs">
+      <div class="text_box">
+        <p class="title">
+
+          持続可能な美
+         
+        </p>
+        <p class="text"> 
+          私たちは、環境に優しい方法で花を育て、提供しています。持続可能な栽培方法を導入し、地域の人々に美しさだけでなく、地球にやさしい選択肢を提供しています。
+        </p>
+    </div>
+    </div>
+
   </section>
   
   <section>
@@ -51,16 +95,19 @@
   </section>
   
   <footer>
-    <div class="box">
-      <img src="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/749274/4306/4e3d3f2421ff1ae2e051612532b5320cffb1244e.png" width="400">
-    </div>
 
-    <ul>
-      <li>住所　　　東京都板橋区</li>
-      <li>電話番号　080-xxxxx-xxxx</li>
-      <li>営業時間　9:00～18:00</li>
-      <li>定休日　　火曜日、水曜日</li>
-    </ul>
+    <img src="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/749274/4306/4e3d3f2421ff1ae2e051612532b5320cffb1244e.png" alt="">
+
+    <dl>
+      <dt>　　住所：</dt>
+      <dd>東京都板橋区</dd>
+      <dt>電話番号：</dt>
+      <dd>080-xxxxx-xxxx</dd>
+      <dt>営業時間：</dt>
+      <dd>9:00～18:00</dd>
+      <dt>　定休日：</dt>
+      <dd>火曜日、水曜日</dd>
+    </dl>
 
     <div class="icon">
       <i class="bi bi-instagram"></i>
@@ -71,7 +118,9 @@
     <p>© osumou flowers all rights reserved.</p>
   </footer>
 
+
   <!-- JavaScriptの実装をする方は以下のタグを削除しないでください -->
   <script src="js/main.js"></script>
 </body>
+
 </html>
