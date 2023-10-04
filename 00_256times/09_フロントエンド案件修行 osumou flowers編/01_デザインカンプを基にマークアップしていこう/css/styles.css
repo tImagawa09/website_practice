@@ -1,32 +1,41 @@
 body {
     margin: 0;
     /* ウィンドウ幅固定 */
-    width: 400px;
-}
-
-.pc {
-    display: none;
+    width: 500px;
 }
 
 /* header部分 */
 header {
     background-color: #3b4b5a;
-    margin: 0;
 }
 
 h1 {
-    display: flex;
     background-image: url(https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/749274/4308/60be5db0515c994465798143c77b41bf3ca85501.png);
     background-size: 50%;
     background-repeat: no-repeat;
-    margin:  3%;
+    background-position: left;
+    padding: 0;
+    margin:  0;
 }
 
 h1 .bi-list {
     margin-left: auto;
     font-size: 46px;
     color: white;
+    padding-right: 5%;
 }
+
+/* @media screen and (min-width: 400px) {
+    .background_header {
+        background-image: url(https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/749274/4307/d4c513094573b5b5b80aca939057e06cd6b768ba.png);
+        background-size: ;
+    }
+
+    h1 .bi-list {
+        display: none;
+    }
+    
+} */
 
 /* hero_area作成 */
 
@@ -75,84 +84,32 @@ h1 .bi-list {
 }
 
 /* コンセプト部分 */
+/* 
+https://niwaka-web.com/flexbox_reverse02/
+これ参考に作成する
+ */
 .concept {
     width: 100%;
-    height: 1000px;
+    height: 1700px;
+    background-color: #3b4b5a;
+    gap: calc(100% / 3);
 }
 
-.concept .story {
-    background-image: url(https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/101/4330/2bdd8283b2819d0791da7b7d130acbf0df5dd52e.jpg);
-    height: 30%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-    margin: 2% 0;
+.concept .box {
+    width: 100%;
+    height: calc(100% / 3);
+    display: flex;
+    flex-direction: column-reverse;
 }
 
-.story .text_box {
-    position: absolute;
-    width: 50%;
-    height: 80%;
-    top: 19%;
-    left: 73%;
-    color: white;
-    transform: translate(-50%,-20%);
-    padding: 2%;
-    margin: 0;
-    background-color: #4C5656;
-    opacity: .8;
+.concept .box .text_box {
+    padding: 3%;
+    color: #ccc;
 }
 
-.concept .cerapy {
-    background-image: url(https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/101/4329/2ecd716a85b245713eb4aefc1cd7f3e90d7a32c6.jpg);
-    height: 30%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-    margin: 2% 0;
+.text_box h3 {
+    text-align: center;
 }
-
-.concept .cerapy .text_box {
-    position: absolute;
-    width: 50%;
-    height: 80%;
-    top: 19%;
-    left: 27%;
-    color: white;
-    transform: translate(-50%,-20%);
-    padding: 2%;
-    margin: 0;
-    background-color: #4C5656;
-    opacity: .8;
-}
-
-.concept .sdgs {
-    background-image: url(https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/101/4328/577ad7e3a00d1da872e394dabaec40ed5f6e1ec8.jpg);
-    height: 30%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-.concept .sdgs .text_box {
-    position: absolute;
-    width: 50%;
-    height: 65%;
-    top: 17%;
-    left: 73%;
-    color: white;
-    transform: translate(-50%,-20%);
-    padding: 2%;
-    margin: 0;
-    background-color: #4C5656;
-    opacity: .8;
-}
-
-
-
-
-
-
 
 /* フッター部分 */
 
