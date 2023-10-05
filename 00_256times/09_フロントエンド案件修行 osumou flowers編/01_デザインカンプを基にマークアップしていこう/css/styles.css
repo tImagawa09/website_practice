@@ -10,7 +10,7 @@
 
 body {
     margin: 0;
-    /* width: 500px; */
+    max-width: 1024px;
 }
 
 /* header部分 */
@@ -18,12 +18,12 @@ body {
 .header_bg {
     background: #3b4b5a;
     width: 100%;
-    height: 80px;
+    height: 100px;
 }
 
 .header_contents {
     width: 100%;
-    height: 80px; /* モバイルでは高さは固定 */
+    height: 100px; /* モバイルでは高さは固定 */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -123,12 +123,12 @@ body {
     height: 400px;
     background-repeat: no-repeat;
     position: relative;
-    margin: 0;
 }
 
 .hero_area .text_box {
     position: absolute;
     width: 45%;
+    max-width: 200px;
     height: 35%;
     top: 40%;
     left: 30%;
@@ -141,10 +141,19 @@ body {
 }
 
 /* テキスト部分 */
-.hero_area .text_box .title {
+.text_box .title {
+    position: relative;
     font-weight: bold;
     font-size: 120%;
     text-align: center;
+    top: 20%;
+}
+
+.text_box .text {
+    position: relative;
+    font-size: 80%;
+    text-align: center;
+    bottom: -25%;
 }
 
 .beauty {
@@ -155,9 +164,46 @@ body {
     font-family: 'Zen Antique', serif;
 }
 
-.text {
-    font-size: 80%;
-    text-align: center;
+/* メディアクエリを使用してデスクトップ用のスタイルを適用 */
+@media screen and (min-width: 769px) {
+    .hero_area {
+        background-image: url(https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/101/4311/af880fc03d0175ac6ec908ba4f05cab9769dbdcc.jpg);
+        background-size: 100%;
+        height: 400px;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .hero_area .text_box {
+        position: absolute;
+        width: 45%;
+        max-width: 300px;
+        height: 35%;
+        top: 40%;
+        left: 30%;
+        color: white;
+        transform: translate(-50%,-20%);
+        padding:0;
+        margin:0;
+        background-color: #4C5656;
+        opacity: .8;
+    }
+
+    /* テキスト部分 */
+    .text_box .title {
+        position: relative;
+        font-weight: bold;
+        font-size: 200%;
+        text-align: center;
+        top: 5%;
+    }
+
+    .text_box .text {
+        position: relative;
+        font-size: 120%;
+        text-align: center;
+        bottom: -5%;
+    }
 }
 
 /* コンセプト部分 */
@@ -167,34 +213,44 @@ https://niwaka-web.com/flexbox_reverse02/
  */
 .concept {
     width: 100%;
-    height: 1700px;
+    height: 1600px;
     background-color: #3b4b5a;
     gap: calc(100% / 3);
 }
 
 .concept .box {
     width: 100%;
-    height: calc(100% / 3);
+    /* height: calc(100% / 3); */
+    max-height: 4500px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    padding: 32px;
+}
+
+.concept .box .pict {
+    max-height: 250px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 32px;
 }
 
 .concept .box .text_box {
-    padding: 3%;
+    padding:  2% 5%;
     color: #ccc;
 }
 
-.text_box h3 {
+.concept .box .text_box h3 {
     text-align: center;
+    padding-bottom: 2%;
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
     .concept .box {
       flex-direction: row;
       justify-content: space-between;
     }
     .concept .box:nth-child(even) {
-      flex-direction: row-reverse;
+      flex-direction: row;
     }
   }
 
@@ -205,32 +261,44 @@ footer {
     background-color: #F4F3DF;
     margin: 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
-footer img {
+footer p {
+    color: #ccc;
+    background-color: #3b4b5a;
+}
+
+.logo-table img {
     padding: 8%;
     width: 50%;
 }
 
 /* お店情報部分 */
-dt {
-    float: left ;
-    clear: left ;
-    margin-right: 0.5em ;
-    width: 120px ;
+.logo-table dl {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.logo-table dt {
+    width: 40% ;
+    color: black;
+    margin-left: 10%;
 }
 
 dd {
-    float: left ;
-    margin-left: 1em ;
+    width: 30%;
+    color: black;
+    margin-right: 10%;
 }
-
 
 /* アイコン部分 */
 footer .icon {
     display: flex;
     width: 50%;
-    margin: auto;
+    margin: 32px auto;
 }
 
 footer .icon i {
@@ -252,3 +320,29 @@ footer .icon i {
     color: #1877F2;
     cursor: pointer;
 }
+
+@media (min-width:769px) {
+    .logo-table {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    /* お店情報部分 */
+    .logo-table dl {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        line-height: 1;
+        padding: 3%;
+        margin-top: 30px;
+    }
+
+    .logo-table dt {
+        width: 30% ;
+    }
+
+    .logo-table dd {
+        width: 40%;
+    }
+  }
