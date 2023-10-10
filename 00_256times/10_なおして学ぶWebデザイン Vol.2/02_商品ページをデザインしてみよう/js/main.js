@@ -1,35 +1,20 @@
-window.addEventListener('DOMContentLoaded', function () {
+// サムネイルボタンの要素をすべて取得
+const thumbnailButtons = document.querySelectorAll('.js-image');
 
-    let imageBtn = document.getElementsByClassName('js-image');
-    let imageMain = document.getElementById('js-image-target');
+// メイン画像要素を取得
+const mainImage = document.getElementById('js-image-target');
 
-    for (let i = 0; i < imageBtn.length; i++) {
-        imageBtn[i].addEventListener('click', function () {
-            let imageStack = this.firstElementChild.getAttribute('src');
-            imageMain.setAttribute('src', imageStack)
-        }, false);
-    }
+// 各サムネイルボタンにクリックイベントリスナーを追加
+thumbnailButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        // クリックされたサムネイルの画像ソースURLを取得
+        const thumbnailSrc = button.querySelector('img').getAttribute('src');
+        
+        // メイン画像のソースをクリックされたサムネイルのソースに設定
+        mainImage.setAttribute('src', thumbnailSrc);
+    });
 });
 
-
-// window.addEventListener('DOMContentLoaded', () => {
-
-//     let imageBtn = document.getElementsByClassName('js-image');
-//     let imageMain = document.getElementById('js-image-target');
-
-//     for(let i = 0; i < imageBtn.length; i++){
-//         imageBtn[i].addEventListener('click', () => {
-//         let imageStack = this.firstElementChild.getAttribute('src');
-//         imageMain.setAttribute('src',imageStack)
-//     });
-//     }
-// });
-
-// const box = document.querySelector(".box")
-
-// box.addEventListener('click', () => {
-//     box.classList.toggle("box-checked");
-// });
 
 // 各.box要素を取得
 let boxes = document.querySelectorAll('.box');
