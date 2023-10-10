@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    
+}
+
+.container {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* 
+ギャラリー部分
+https://jomo-p.co.jp/blog/javascript-image-gallery-click-to-switch-images/
+ */
+
+.gallery {
+    width: 70%;
+    margin: 2%;
+} 
+
+.gallery-img img{
+    width: 99%;
+    height: 300px;
+}
+
+.gallery-list{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.js-image{
+    cursor: pointer;
+    border: none;
+    background: none;
+    transition: .4s;
+    height: 100px;
+}
+
+.js-image:hover{
+    opacity: 0.4;
+}
+
+.js-image img {
+    width: 100px;
+    height: 100px;
+    /* object-fit: cover; */
+}
+
+.explanation {
+    width: 75%;
+}
+
+/* 
+星評価部分
+*/
+.boot-icon {
+    color: #FDAC1E;
+}
+
+/* 
+カラー選択部分
+*/
+.color-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.color-box .box {
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.color-box .box+.box {
+    margin-left: 8px;
+}
+
+.beige {
+    background-color: #E3C38E;
+}
+
+.brown {
+    background-color: #725750;
+}
+
+.dark-red {
+    background-color: #8B2C2C;
+}
+
+.box-checked {
+    box-sizing: border-box;
+    border: 4px solid #428A8A;
+}
+
+/* 
+商品説明部分 
+*/
+p {
+    line-height: 1.4;
+}
+
+/* 
+ボタン部分
+*/
+.push-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    padding: 12px;
+	width: 150px;
+	margin: 0 auto;
+	font-weight: bold;
+	border: 2px solid #27acd9;
+	color: #27acd9;
+	border-radius: 8px;
+	transition: 0.5s;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #fff;
+	background: #27acd9;
+}
+
+/* 
+テーブル部分
+*/
+
+table, th, td {
+    border:solid 1px #ccc;
+	padding: 4px;
+    margin: 8px;
+}
+
+table th {
+    background: #eee;
+}
+
+
