@@ -1,31 +1,73 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Playground</title>
-  <!-- CSSを読み込む際に必要です -->
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Chat UI</title>
 </head>
 <body>
-  <!-- 自由に編集していただいて構いません -->
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>チャットルーム</h1>
+        </div>
+        <div class="chat">
+            <div class="messages">
+                <div class="message received">
+                    <div class="message-content">
+                        <div class="avatar left-avatar">
+                            <img src="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/702833/4447/09c58ff8458bbcb29e03f19a1e13ef600dc72ca7.png" width="100" alt="User Avatar">
+                        </div>
+                        <div class="message-text">
+                            こんにちは！<br>
+                            わたしはパーソナルアシスタントのドットちゃんです。<br>
+                            お困りごとがあれば何でも質問してくださいね。
+                        </div>
+                    </div>
+                    <div class="timestamp">12:00</div>
+                </div>
+                <div class="message sent">
+                    <div class="message-content">
+                        <div class="message-text">
+                            HTMLとCSSについて教えてください。
+                        </div>
+                        <div class="avatar right-avatar">
+                            <img src="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/702833/4444/497abc6465815385a5d5101a22e3db4d0070576e.png" width="100" alt="User Avatar">
+                        </div>
+                    </div>
+                    <div class="timestamp">12:08</div>
+                </div>
+                <div class="message received">
+                    <div class="message-content">
+                        <div class="avatar left-avatar">
+                            <img src="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/702833/4447/09c58ff8458bbcb29e03f19a1e13ef600dc72ca7.png" width="100" alt="User Avatar">
+                        </div>
+                        <div class="message-text">
+                            HTMLはウェブページの骨組みを作るもの、CSSはその骨組みをおしゃれに着飾るものだよ。
+                        </div>
+                    </div>
+                    <div class="timestamp">12:09</div>
+                </div>
+                <div class="message sent">
+                    <div class="message-content">
+                        <div class="message-text">
+                            どういうこと？
+                        </div>
+                        <div class="avatar right-avatar">
+                            <img src="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/702833/4444/497abc6465815385a5d5101a22e3db4d0070576e.png" width="100" alt="User Avatar">
+                        </div>
+                    </div>
+                    <div class="timestamp">17:14</div>
+                </div>
+            </div>
+            <div class="input-area">
+                <input type="text" id="message-input" placeholder="Type your message...">
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+    </div>
 
-  <img src="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/702833/4447/09c58ff8458bbcb29e03f19a1e13ef600dc72ca7.png" width="100">
-  <img src="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/702833/4444/497abc6465815385a5d5101a22e3db4d0070576e.png" width="100">
-  
-こんにちは！わたしはパーソナルアシスタントのドットちゃんです。お困りごとがあれば何でも質問してくださいね。
-12:00
-
-HTMLとCSSについて教えてください。
-12:08
-
-HTMLはウェブページの骨組みを作るもの、CSSはその骨組みをおしゃれに着飾るものだよ。
-12:09
-
-どういうこと？
-17:14
-  
-  <!-- JavaScriptを利用する際に必要です -->
+      <!-- JavaScriptを利用する際に必要です -->
   <script src="js/main.js"></script>
 </body>
 </html>
