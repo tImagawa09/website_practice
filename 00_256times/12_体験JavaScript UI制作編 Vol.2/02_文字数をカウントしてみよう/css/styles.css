@@ -1,0 +1,56 @@
+/* この課題では CSS を変更してはいけません */
+
+textarea,
+button {
+  all: unset;
+}
+
+body {
+  padding: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+section {
+  padding: 16px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+section div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #aaa;
+  padding: 8px;
+  height: 160px;
+}
+
+button {
+  background: #08c;
+  color: #fff;
+  font-size: 14px;
+  width: 100px;
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: .8;
+}
