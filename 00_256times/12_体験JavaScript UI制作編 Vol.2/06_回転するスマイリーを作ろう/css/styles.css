@@ -1,0 +1,15 @@
+/* この課題では CSS を変更してはいけません */
+
+body {
+    margin: 0;
+    height: 100vh;
+    
+    display: grid;
+    place-items: center;
+  }
+  
+  .bi {
+    font-size: 64px;
+    color: orange;
+  }
+  
